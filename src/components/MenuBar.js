@@ -44,6 +44,13 @@ const MenuBar = (props) => {
         as={Link}
         to='/medecins'
       />
+      <Menu.Item
+        name='RDV'
+        active={activeItem === "RDV"}
+        onClick={handleItemClick}
+        as={Link}
+        to='/rdvs'
+      />
 
       <Menu.Menu position='right'>
         <Menu.Item
@@ -59,6 +66,13 @@ const MenuBar = (props) => {
           onClick={handleItemClick}
           as={Link}
           to='/ajouter'
+        />
+        <Menu.Item
+          name='Ajouter RDV'
+          active={activeItem === "Ajouter RDV"}
+          onClick={handleItemClick}
+          as={Link}
+          to='/ajouterrdv'
         />
       </Menu.Menu>
     </Menu>
